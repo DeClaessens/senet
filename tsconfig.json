@@ -1,0 +1,13 @@
+{
+  "extends": "@tsconfig/esm/tsconfig.json",
+  "include": ["src", "math.spec.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "esModuleInterop": true
+  }
+}
